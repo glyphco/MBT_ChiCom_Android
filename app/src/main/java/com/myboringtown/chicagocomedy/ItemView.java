@@ -34,9 +34,9 @@ public class ItemView {
 
     @Resolve
     private void onResolved() {
-        titleTxt.setText(mInfo.getId() + " " + mInfo.getName() );
-        captionTxt.setText(mInfo.getImageUrl()+ " " + mInfo.getDescription());
-        timeTxt.setText(mInfo.getName());
-        anImageView.setImageUrl(mInfo.getImageUrl());
+        titleTxt.setText(mInfo.getName() );
+        captionTxt.setText(mInfo.getDescription());
+        timeTxt.setText(mInfo.getLocalStartDate() + " " +  mInfo.getVenueName() + " " + mInfo.getLocalStartTime());
+        anImageView.setImageUrl(mInfo.getImageSm());
     }
 }

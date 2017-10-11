@@ -1,8 +1,16 @@
 package com.myboringtown.chicagocomedy;
 
 
+import android.net.ParseException;
+import android.text.TextUtils;
+import android.text.format.DateFormat;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 
 /**
  * Created by janisharali on 24/08/16.
@@ -59,13 +67,25 @@ public class InfiniteFeedInfo {
     @Expose
     private String venue_name;
 
-    @SerializedName("image_url")
+    @SerializedName("imageurl")
     @Expose
-    private String imageUrl;
+    private String imageurl;
 
-    @SerializedName("UTC_start")
+    @SerializedName("imageSm")
     @Expose
-    private String UTCStart;
+    private String imageSm;
+
+    @SerializedName("imageIcon")
+    @Expose
+    private String imageIcon;
+
+    @SerializedName("localstarttime")
+    @Expose
+    private String localstarttime;
+
+    @SerializedName("localstartdate")
+    @Expose
+    private String localstartdate;
 
     public String getId() {return id;}
 
@@ -94,21 +114,36 @@ public class InfiniteFeedInfo {
     }
 
     public String getImageUrl() {
-        return imageUrl;
+        return imageurl;
     }
 
     public void setImageUrl(String imageurl) {
-        this.imageUrl = imageurl;
+        this.imageurl = imageurl;
     }
 
-    public String getUTCStart() {
-        return UTCStart;
+    public String getImageSm() {
+        return imageSm;
     }
 
-    public void setUTCStart(String UTC_start) {
-       this.UTCStart = UTC_start;
+    public void setImageSm(String imageSm) {
+        this.imageSm = imageSm;
     }
 
+    public String getLocalStartTime() {
+        return localstarttime;
+    }
+
+    public void setLocalStartTime(String localstarttime) {
+       this.localstarttime = localstarttime;
+    }
+
+    public String getLocalStartDate() {
+        return localstartdate;
+    }
+
+    public void setLocalStartDate(String localstartdate) {
+        this.localstartdate = localstartdate;
+    }
 
     //    @SerializedName("title")
 //    @Expose

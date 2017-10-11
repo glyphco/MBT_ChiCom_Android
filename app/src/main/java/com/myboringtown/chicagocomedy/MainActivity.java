@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements LoadMoreView.Call
     }
 
     private void setupView() {
-        mInfiniteView.setLoadMoreResolver(new LoadMoreView(this));
+        //mInfiniteView.setLoadMoreResolver(new LoadMoreView(this));
         onLoadMore();
     }
 
@@ -36,10 +36,10 @@ public class MainActivity extends AppCompatActivity implements LoadMoreView.Call
     @Override
     public void onLoadMore() {
         // simulation of 5 pages is done
-        if (count++ == 5) {
+        if (count++ == 2) {
             mInfiniteView.noMoreToLoad();
         }
-        AndroidNetworking.post("http://www.mocky.io/v2/59dc0fba1000000706ccd236")
+        AndroidNetworking.get("https://api.myboringtown.com/api/chicagocomedy/events")
                 .build()
                 .getAsObjectList(InfiniteFeedInfo.class, new ParsedRequestListener<List<InfiniteFeedInfo>>() {
                     @Override

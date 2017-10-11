@@ -18,7 +18,8 @@ public class LoadMoreView {
 
     @LoadMore
     private void onLastItemShown() {
-        mCallback.onLoadMore();
+
+        //mCallback.onLoadMore();
     }
 
     public interface Callback {
