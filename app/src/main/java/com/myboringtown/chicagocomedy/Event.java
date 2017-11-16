@@ -7,7 +7,7 @@ package com.myboringtown.chicagocomedy;
 public class Event {
 
     private int id;
-    private int mve_id1;
+    private int mve_id;
     private String name;
     private String description;
             //"showsjson":"[]",
