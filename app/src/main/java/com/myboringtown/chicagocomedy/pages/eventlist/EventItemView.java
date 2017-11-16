@@ -1,4 +1,4 @@
-package com.myboringtown.chicagocomedy;
+package com.myboringtown.chicagocomedy.pages.eventlist;
 
 import android.widget.TextView;
 
@@ -6,13 +6,14 @@ import com.androidnetworking.widget.ANImageView;
 import com.mindorks.placeholderview.annotations.Layout;
 import com.mindorks.placeholderview.annotations.Resolve;
 import com.mindorks.placeholderview.annotations.View;
+import com.myboringtown.chicagocomedy.R;
 
 
 /**
  * Created by janisharali on 24/08/16.
  */
-@Layout(R.layout.item_view)
-public class ItemView {
+@Layout(R.layout.event_item_view)
+public class EventItemView {
 
     @View(R.id.titleTxt)
     private TextView titleTxt;
@@ -28,7 +29,7 @@ public class ItemView {
 
     private InfiniteFeedInfo mInfo;
 
-    public ItemView(InfiniteFeedInfo info) {
+    public EventItemView(InfiniteFeedInfo info) {
         mInfo = info;
     }
 

@@ -1,4 +1,4 @@
-package com.myboringtown.chicagocomedy;
+package com.myboringtown.chicagocomedy.pages.eventlist;
 
 /**
  * Created by sdalton on 10/6/2017.

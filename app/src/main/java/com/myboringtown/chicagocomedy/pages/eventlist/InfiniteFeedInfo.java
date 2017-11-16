@@ -1,16 +1,8 @@
-package com.myboringtown.chicagocomedy;
+package com.myboringtown.chicagocomedy.pages.eventlist;
 
-
-import android.net.ParseException;
-import android.text.TextUtils;
-import android.text.format.DateFormat;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
 
 /**
  * Created by janisharali on 24/08/16.

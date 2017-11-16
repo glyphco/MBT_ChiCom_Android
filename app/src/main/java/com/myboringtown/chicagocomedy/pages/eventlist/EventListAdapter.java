@@ -1,4 +1,4 @@
-package com.myboringtown.chicagocomedy;
+package com.myboringtown.chicagocomedy.pages.eventlist;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -7,11 +7,13 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.myboringtown.chicagocomedy.R;
+
 /**
  * Created by sdalton on 10/9/2017.
  */
 
-public class CustomListAdapter extends ArrayAdapter {
+public class EventListAdapter extends ArrayAdapter {
 
     //to reference the Activity
     private final Activity context;
@@ -22,9 +24,9 @@ public class CustomListAdapter extends ArrayAdapter {
     //to store the list of countries
     private final String[] venuenameArray;
 
-    public CustomListAdapter(Activity context, String[] nameArrayParam, String[] venuenameArrayParam){
+    public EventListAdapter(Activity context, String[] nameArrayParam, String[] venuenameArrayParam){
 
-        super(context,R.layout.list_row , nameArrayParam);
+        super(context, R.layout.list_row , nameArrayParam);
 
         this.context=context;
         this.nameArray = nameArrayParam;

@@ -1,8 +1,9 @@
-package com.myboringtown.chicagocomedy;
+package com.myboringtown.chicagocomedy.pages.eventlist;
 
 
 import com.mindorks.placeholderview.annotations.Layout;
 import com.mindorks.placeholderview.annotations.infinite.LoadMore;
+import com.myboringtown.chicagocomedy.R;
 
 /**
  * Created by janisharali on 05/10/16.
